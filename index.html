@@ -1,0 +1,187 @@
+<html>
+<head>
+	<title>Social Media Help</title>
+  <link href="Index/css/style.css" rel="stylesheet" >
+</head>
+<body>
+  <header class="main-header">
+    <a class="logo" href="#"></a>
+    <ul class="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li class="dropdown">
+          <a href="#">Pick a Social Media</a>
+          <ul class="drop-nav">
+            <li class="flyout">
+                <a href="Facebook.html">Facebook</a>
+                <ul class="flyout-nav">
+                  <li><a href="Facebook.html">Sign up</a></li>
+                  <li><a href="Facebook.html#c4">Post</a></li>
+                  <li><a href="Facebook.html#c5">Useful Tip</a></li>
+                </ul>
+            </li>
+            <li class="flyout">
+                <a href="Snapchat.html">Snapchat</a>
+                <ul class="flyout-nav">
+                  <li><a href="Snapchat.html">Sign up</a></li>
+                  <li><a href="Snapchat.html#c1">Send a snap</a></li>
+                  <li><a href="Snapchat.html#c2">Useful Tip!</a></li>
+                </ul>
+            </li>
+            <li class="flyout">
+                <a href="instagram.html">Instagram</a>
+                <ul class="flyout-nav">
+                  <li><a href="instagram.html">Sign up</a></li>
+                  <li><a href="instagram.html#c5">Make a post</a></li>
+                  <li><a href="instagram.html#c6">Useful Tip</a></li>
+                </ul>
+            </li>
+            <li class="flyout">
+                <a href="reddit.html">Reddit</a>
+                <ul class="flyout-nav">
+                  <li><a href="reddit.html">Sign up</a></li>
+                  <li><a href="reddit.html#c7">Make a post</a></li>
+                  <li><a href="reddit.html#c8">Useful Tip</a></li>
+                </ul>
+            </li>
+            <li class="flyout">
+                <a href="linkedin.html">LinkedIn</a>
+                <ul class="flyout-nav">
+                  <li><a href="linkedin.html">Sign up</a></li>
+                  <li><a href="linkedin.html#c9">Make a post</a></li>
+                  <li><a href="linkedin.html#c10">Useful Tip</a></li>
+                </ul>
+            </li>
+            <li class="flyout">
+                <a href="gmail.html">Gmail</a>
+                <ul class="flyout-nav">
+                  <li><a href="gmail.html">Sign up</a></li>
+                  <li><a href="gmail.html#c11">Sending an email</a></li>
+                  <li><a href="gmail.html#c12">Useful Tip</a></li>
+                </ul>
+            </li>   
+          </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+    
+    <div id="layout">
+        <div class="item one"><div class="info">
+            This is the Homepage! Here you can select any <b>Social Media</b> you wish to learn about!
+            <br>
+            <br>
+            Each page will teach you how to find the App/Website and sign-up for an account. 
+            <br>
+            <br>
+            Once you have made an account there will be a brief description on how to use the service.
+            <br>
+            <br>
+            Finally, there will be a section with helpful tips and tricks that can be used to help progress a more efficient work-ethic in University, the office or hobbies!
+            
+            </div></div>
+        <div class="item two">
+        
+            <div id="layout2">
+                <div class="item one2">
+                    <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 3</div>
+                              <img class="slideimg" src="Index/images/students.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 3</div>
+                              <img class="slideimg" src="Index/images/students2.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">3 / 3</div>
+                              <img class="slideimg" src="Index/images/social%20media.jpg" style="width:100%">
+                            </div>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+
+        <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 10000); // Change image every 2 seconds
+        }
+        </script>
+                </div>
+                <div class="item2 two2">
+                    <a href="Facebook.html">
+                        <img class="facebook" src="Index/images/facebook.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="item2 three2">
+                    <a href="Snapchat.html">
+                        <img class="snapchat" src="Index/images/snapchat.png" alt="snapchat">
+                    </a>
+                </div>
+                <div class="item2 four2">
+                    <a href="instagram.html">
+                        <img class="instagram" src="Index/images/instagram.png" alt="instagram">
+                    </a>
+                </div>
+                <div class="item2 five2">
+                    <a href="reddit.html">
+                        <img class="reddit" src="Index/images/reddit.png" alt="reddit">
+                    </a>
+                </div>
+                <div class="item2 six2">
+                    <a href="linkedin.html">
+                        <img class="linkedin" src="Index/images/linkedin.png" alt="linkedin">
+                    </a>
+                </div>
+                <div class="item2 seven2">
+                    <a href="gmail.html">
+                        <img class="gmail" src="Index/images/gmail.png" alt="gmail">
+                    </a>
+                </div>
+                <div class="item2 nine2">
+                    <p>Please select a social media!</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="item three">Three</div>
+        <div class="item four">
+            <div class="footer">
+                <a href="About.html">About this webpage!</a> | <a href="contact.html">Contact Us!</a>
+                <div class="name">&copy; Adam Finn 2020</div>
+            </div>
+        </div>
+        
+        <div class="item five"><div class="title2">Information</div></div>
+        <div class="item six"><h1 class="welcome">Welcome!</h1></div>
+        <div class="item seven"><div class="title2">Links</div></div>
+        
+    </div>
+    
+    
+</body>
+</html>

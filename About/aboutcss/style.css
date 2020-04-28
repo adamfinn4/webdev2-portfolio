@@ -1,0 +1,375 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.eot');
+	src:url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.woff') format('woff'),
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.ttf') format('truetype'),
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.svg#icomoon') format('svg');
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0px 100px 1000px 100px;
+    grid-template-areas: 
+        "nav    nav     nav"
+        "adsbanner  mainbanner  linksbanner"
+        "ads    main    links"
+        "footer footer  footer";
+    grid-column-gap: 20px;
+}
+
+#contentgrid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(6, 164.6px);
+    grid-template-areas: "facebook      fbtext"
+                         "snapchat      sctext"
+                         "instagram     igtext"
+                         "reddit        rtext"
+                         "linkedin      ltext"
+                         "gmail         gtext";
+}
+
+.item{
+    font-family: montserrat, sans-serif;
+    font-size: 40px;
+    color: black;
+    z-index: 0;
+}
+
+.one {
+    background-image: linear-gradient(to bottom right, white, #c2c2c2);
+    grid-area: ads;
+    border: solid 2px #B10000;
+    height: 616px;
+    width: 14.3%;
+    margin: 94px -10px 14px 39px;
+    border-radius: 0px 0px 8px 8px;
+    border-top: none;
+    position: fixed;
+}
+
+.two {
+    background-image: linear-gradient(to bottom right, white, #c2c2c2);
+    grid-area: main;
+    border: solid 2px #B10000;
+    border-radius: 0 0 8px 8px;
+    border-top: none;
+    margin-bottom: 10px;
+}
+
+.three {
+    background-image: linear-gradient(to bottom right, white, #c2c2c2);
+    grid-area: links;
+    border: solid 2px #B10000;
+    height: 615px;
+    width: 14.26%;
+    border-radius: 0 0 8px 8px;
+    border-top: none;
+    margin: 94px -10px 14px 1593px;
+    position: fixed;
+    z-index: -1;
+}
+
+.four {
+    background-color: #EA0000;
+    grid-area: footer;
+    border: solid 2px #B10000;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+.five{
+    background-image: linear-gradient(to bottom right, red, red, #ffb5b5);
+    grid-area: adsbanner;
+    margin: 19.5px 0px 0px 39px;
+    border: solid 2px #B10000;
+    border-radius: 8px 8px 0px 0px;
+    width: 14.27%;
+    position: fixed;
+}
+
+.six{
+    background-image: linear-gradient(to bottom right, red, red, #ffb5b5);
+    grid-area: mainbanner;
+    margin-top: 20px;
+    border: solid 2px #B10000;
+    border-radius: 8px 8px 0px 0px;
+    z-index: -1;
+}
+
+.seven{
+    background-image: linear-gradient(to bottom right, red, red, #ffb5b5);
+    grid-area: linksbanner;
+    margin: 19.5px 0px 0px 1593px;
+    width: 14.26%;
+    border: solid 2px #B10000;
+    border-radius: 8px 8px 0px 0px;
+    position: fixed;
+    z-index: -1;
+}
+
+body {
+	margin: 0;
+	background: #787878;
+	color: #ecf0f1;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0px 0px 10px;
+}
+
+.title {
+    font-size: 35px sans-serif;
+    text-align: center;
+    margin-top: 45px;
+    z
+}
+
+.title2{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 18px 5px 0px 5px;
+}
+
+.info {
+     font: 18px sans serif;
+    margin: 25px 8px 10px 10px;
+    width: 90%;
+    float: left;
+}
+
+p {
+    font: 19px sans serif;
+    margin: 25px 10px 10px 10px;
+    font-style: italic;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer2 {
+    text-decoration: none;
+    color: #800000;
+    font-size: 12px;
+}
+
+.footer {
+    
+    text-align: center;
+    margin-top: 20px;
+    color: #800000;
+    font-size: 14px;
+}
+
+.main-header {
+  margin: auto;
+  width: 95%;
+  min-height: 90px;
+  padding: 1em 2em;
+  border: 2px solid #B10000;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background: #EA0000;
+}
+  .main-header:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+.logo {
+	display: block;
+	text-decoration: none;
+  float: left;
+  margin-top: 5px;
+}
+  .logo::before {
+    color: #fff;
+    content: "\e001";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5em;
+    font-family: "icomoon";
+    -webkit-font-smoothing: antialiased;
+  }
+
+/* Nav Demo Styles -------------------- */
+
+.main-nav,
+.drop-nav {
+  background: #EA0000;
+  grid-area: nav;
+}
+.main-nav {
+  float: right;
+  border-radius: 4px;
+  margin-top: 8px;
+  border: solid 1px #B10000;
+}
+  .main-nav > li {
+    float: left;
+    border-left: solid 1px #B10000;
+  }
+  .main-nav li:first-child {
+    border-left: none;
+  }
+  .main-nav a {
+    color: #fff;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+      
+  }
+
+.main-nav a:hover{
+	background-color: #B10000;
+	color: #000000;
+}
+
+.main-nav a:active{
+  background-color: #FFC8C8;
+}
+
+.dropdown,
+.flyout {
+    position: relative;
+    z-index: 2;
+}
+.dropdown:after {
+  content: "\25BC";
+  font-size: .9em;
+  display: block;
+  position: absolute;
+  top: 28%;
+  right: 5%;
+  color: white;
+}
+.drop-nav,
+.flyout-nav {
+    position: absolute;
+    display: none;
+    border: 1px solid #B10000;
+}
+.drop-nav li {
+    border-bottom: 1px solid #B10000;
+}
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav{
+    display: block;
+}
+.flyout-nav {
+ left: 100%;
+ top: 0%;
+}
+.flyout:hover a,
+.flyout-nav {
+    background: #B10000;
+    border-bottom: 1px solid #750000;
+}
+.flyout:after {
+  content: "\25BA";
+  font-size: .5em;
+  display: block;
+  position: absolute;
+  top: 38%;
+  right: 5%;
+  color: white;
+}
+
+.tool1 {
+    grid-area: facebook;
+    border-top: none;
+    border-right: 1px solid;
+}
+
+.tool2 {
+    grid-area: snapchat;
+}
+
+.tool3 {
+    grid-area: instagram;
+}
+
+.tool4 {
+    grid-area: reddit;
+}
+
+.tool5 {
+    grid-area: linkedin;
+}
+
+.tool6 {
+    grid-area: gmail;
+    border-radius: 0px 0px 0px 8px;
+}
+
+.tool7 {
+    grid-area: fbtext;
+}
+
+.tool8 {
+    grid-area: sctext;
+}
+
+.tool9 {
+    grid-area: igtext;
+}
+
+.tool10 {
+    grid-area: rtext;
+}
+
+.tool11 {
+    grid-area: ltext;
+}
+
+.tool12 {
+    grid-area: gtext;
+    border-radius: 0px 0px 8px 0px;
+}
+
+.tool2, .tool3, .tool4, .tool5, .tool6 {
+    border: 1px solid;
+    border-left: none;
+    border-bottom: none;
+}
+
+.tool8, .tool9, .tool10, .tool11, .tool12 {
+    border: 1px solid;
+    border-left: none;
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

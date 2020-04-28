@@ -1,0 +1,116 @@
+<html>
+<head>
+	<title>Social Media Help</title>
+  <link href="userdata/style.css" rel="stylesheet" >
+</head>
+<body>
+  <header class="main-header">
+    <a class="logo" href="#"></a>
+    <ul class="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li class="dropdown">
+          <a href="#">Pick a Social Media</a>
+          <ul class="drop-nav">
+            <li class="flyout">
+                <a href="Facebook.html">Facebook</a>
+                <ul class="flyout-nav">
+                  <li><a href="Facebook.html">Sign up</a></li>
+                  <li><a href="Facebook.html#c4">Post</a></li>
+                  <li><a href="Facebook.html#c5">Useful Tip</a></li>
+                </ul>
+            </li>
+            <li class="flyout">
+                <a href="Snapchat.html">Snapchat</a>
+                <ul class="flyout-nav">
+                  <li><a href="Snapchat.html">Sign up</a></li>
+                  <li><a href="Snapchat.html#c1">Send a snap</a></li>
+                  <li><a href="Snapchat.html#c2">Useful Tip!</a></li>
+                </ul>
+            </li>
+            <li class="flyout">
+                <a href="instagram.html">Instagram</a>
+                <ul class="flyout-nav">
+                  <li><a href="instagram.html">Sign up</a></li>
+                  <li><a href="instagram.html#c5">Make a post</a></li>
+                  <li><a href="instagram.html#c6">Useful Tip</a></li>
+                </ul>
+            </li>
+            <li class="flyout">
+                <a href="reddit.html">Reddit</a>
+                <ul class="flyout-nav">
+                  <li><a href="reddit.html">Sign up</a></li>
+                  <li><a href="reddit.html#c7">Make a post</a></li>
+                  <li><a href="reddit.html#c8">Useful Tip</a></li>
+                </ul>
+            </li>
+            <li class="flyout">
+                <a href="linkedin.html">LinkedIn</a>
+                <ul class="flyout-nav">
+                  <li><a href="linkedin.html">Sign up</a></li>
+                  <li><a href="linkedin.html#c9">Make a post</a></li>
+                  <li><a href="linkedin.html#c10">Useful Tip</a></li>
+                </ul>
+            </li>
+            <li class="flyout">
+                <a href="gmail.html">Gmail</a>
+                <ul class="flyout-nav">
+                  <li><a href="gmail.html">Sign up</a></li>
+                  <li><a href="gmail.html#c11">Sending an email</a></li>
+                  <li><a href="gmail.html#c12">Useful Tip</a></li>
+                </ul>
+            </li>  
+          </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+    
+    <div id="layout">
+        <div class="item one">One</div>
+        <div class="item two">
+            
+            <div class="resultspos">
+                    <div class="results"></div>
+                    <h1 class="registered">You are registered!</h1>
+                    <p class="registered">The information you submitted has been recieved, thank you. We will process your registration shortly.</p>
+
+                    <h3 class="subdata">Submitted Data</h3>
+
+                    <div id="userdata"></div>
+
+                    <p><a href="contact.html">Return to Contact Page</a></p>
+
+
+                <div id="userdata"></div>
+
+                <script>
+                    const dataList = document.getElementById("userdata")
+                    new URLSearchParams(window.location.search).forEach((value, name) => {
+                        dataList.append(`${name}: ${value}`)
+                        dataList.append(document.createElement('br'))
+                    })  
+
+
+            </script> 
+
+            </div> 
+            
+        </div>
+        <div class="item three">Three</div>
+        <div class="item four">
+            <div class="footer">
+                <a href="About.html" class="footer2">About this webpage!</a> | <a href="contact.html" class="footer2">Contact Us!</a>
+                <div class="name">&copy; Adam Finn 2020</div>
+            </div>
+        </div>
+        
+        <div class="item five">Five</div>
+        <div class="item six">User data</div>
+        <div class="item seven">Seven</div>
+        
+    </div>
+    
+    
+</body>
+</html>
