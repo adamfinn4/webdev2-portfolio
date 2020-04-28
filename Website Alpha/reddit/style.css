@@ -1,0 +1,335 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.eot');
+	src:url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.woff') format('woff'),
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.ttf') format('truetype'),
+		url('http://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-13/fonts/icomoon.svg#icomoon') format('svg');
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0px 100px 3350px 100px;
+    grid-template-areas: 
+        "nav    nav     nav"
+        "adsbanner  mainbanner  linksbanner"
+        "ads    main    links"
+        "footer footer  footer";
+    grid-column-gap: 20px;
+}
+
+.item{
+    font-family: montserrat, sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+.bannerimg {
+    width: 100%;
+}
+
+.pic1 {
+    height: 12.5%;
+    float: right;
+    margin: -45px 35% 0px 0px;
+}
+
+.pic2 {
+    height: 12.5%;
+    float: right;
+    margin: -20px 300px 0px 0px;
+}
+
+.pic3 {
+    height: 13.5%;
+    margin: 10px 0px 0px 15%;
+}
+
+.pic4 {
+    height: 13.5%;
+    margin: -40px 0px 0px 35%;
+}
+
+.pic5 {
+    height: 13.5%;
+    margin: -200px 0px 0px 75%;
+}
+
+.titlecontent1 {
+    margin: 10px;
+}
+
+.titlecontent2 {
+    margin: 30px 0px 0px 20px;
+}
+
+.titlecontent3 {
+    margin: 50px 0px 0px 20px;
+}
+
+.textcontent1 {
+    font-size: 17px;
+    margin: 15px 10px;
+}
+
+.textcontent2 {
+    font-size: 17px;
+    margin: 15px 50% 0px 10px;
+}
+
+.textcontent3 {
+    font-size: 17px;
+    margin: 415px 50% 0px 10px;
+}
+
+.textcontent4 {
+    font-size: 17px;
+    margin: 415px 25% 0px 10px;
+}
+
+.textcontent5 {
+    font-size: 17px;
+    margin: 15px 25% 0px 10px;
+}
+
+.textcontent6 {
+    font-size: 17px;
+    margin: 15px 25% 0px 10px;
+}
+
+.textcontent7 {
+    font-size: 17px;
+    margin: 15px 50% 0px 10px;
+}
+
+.footer2 {
+    text-decoration: none;
+    color: #800000;
+    font-size: 12px;
+}
+
+.footer {
+    
+    text-align: center;
+    margin-top: 20px;
+    color: #800000;
+    font-size: 14px;
+}
+
+.one {
+    background-image: linear-gradient(to bottom right, white, #c2c2c2);
+    grid-area: ads;
+    border: solid 2px #B10000;
+    height: 617px;
+    width: 14.3%;
+    margin: 94px -10px 14px 29px;
+    border-radius: 0px 0px 8px 8px;
+    border-top: none;
+    position: fixed;
+}
+
+.two {
+    background-image: linear-gradient(to bottom right, white, #c2c2c2);
+    grid-area: main;
+    border: solid 2px #B10000;
+    border-radius: 0 0 8px 8px;
+    border-top: none;
+    margin-bottom: 10px;
+}
+
+.three {
+    background-image: linear-gradient(to bottom right, white, #c2c2c2);
+    grid-area: links;
+    border: solid 2px #B10000;
+    height: 616px;
+    width: 14.26%;
+    border-radius: 0 0 8px 8px;
+    border-top: none;
+    margin: 94px -10px 14px 1600px;
+    position: fixed;
+    z-index: -1;
+}
+
+.four {
+    background-color: #EA0000;
+    grid-area: footer;
+    border: solid 2px #B10000;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+.five{
+    background-image: linear-gradient(to bottom right, red, red, #ffb5b5);
+    grid-area: adsbanner;
+    margin: 19.5px 0px 0px 29px;
+    border: solid 2px #B10000;
+    border-radius: 8px 8px 0px 0px;
+    height: 75px;
+    width: 14.27%;
+    position: fixed;
+}
+
+.six{
+    background-image: linear-gradient(to bottom right, red, red, #ffb5b5);
+    grid-area: mainbanner;
+    margin-top: 20px;
+    border: solid 2px #B10000;
+    border-radius: 8px 8px 0 0
+}
+
+.seven{
+    background-image: linear-gradient(to bottom right, red, red, #ffb5b5);
+    grid-area: linksbanner;
+    margin: 19.5px 0px 0px 84.1%;
+    height: 75px;
+    width: 14.26%;
+    border: solid 2px #B10000;
+    border-radius: 8px 8px 0px 0px;
+    position: fixed;
+    z-index: -1;
+}
+
+body {
+	margin: 0;
+	background: #787878;
+	color: #ecf0f1;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+.main-header {
+  margin: auto;
+  width: 95%;
+  min-height: 90px;
+  padding: 1em 2em;
+  border: 2px solid #B10000;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+	background: #EA0000;
+}
+  .main-header:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+.logo {
+	display: block;
+	text-decoration: none;
+  float: left;
+  margin-top: 5px;
+}
+  .logo::before {
+    color: #fff;
+    content: "\e001";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5em;
+    font-family: "icomoon";
+    -webkit-font-smoothing: antialiased;
+  }
+
+/* Nav Demo Styles -------------------- */
+
+.main-nav,
+.drop-nav {
+  background: #EA0000;
+  grid-area: nav;
+}
+.main-nav {
+  float: right;
+  border-radius: 4px;
+  margin-top: 8px;
+  border: solid 1px #B10000;
+}
+  .main-nav > li {
+    float: left;
+    border-left: solid 1px #B10000;
+  }
+  .main-nav li:first-child {
+    border-left: none;
+  }
+  .main-nav a {
+    color: #fff;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+      
+  }
+
+.main-nav a:hover{
+	background-color: #B10000;
+	color: #000000;
+}
+
+.main-nav a:active{
+  background-color: #FFC8C8;
+}
+
+.dropdown,
+.flyout {
+    position: relative;
+}
+.dropdown:after {
+  content: "\25BC";
+  font-size: .9em;
+  display: block;
+  position: absolute;
+  top: 28%;
+  right: 5%;
+  color: white;
+}
+.drop-nav,
+.flyout-nav {
+    position: absolute;
+    display: none;
+    border: 1px solid #B10000;
+}
+.drop-nav li {
+    border-bottom: 1px solid #B10000;
+}
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav{
+    display: block;
+}
+.flyout-nav {
+ left: 100%;
+ top: 0%;
+}
+.flyout:hover a,
+.flyout-nav {
+    background: #B10000;
+    border-bottom: 1px solid #750000;
+}
+.flyout:after {
+  content: "\25BA";
+  font-size: .5em;
+  display: block;
+  position: absolute;
+  top: 38%;
+  right: 5%;
+  color: white;
+}
+/* Dropdown styles -------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
